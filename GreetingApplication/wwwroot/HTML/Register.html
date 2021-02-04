@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/JavaScripts/EmployeeOperation.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../Css/Register.css" />
+</head>
+<body class="Register_Body_Div">
+    <div class="Register_Main_Div">
+        <div class="Register_Div"><b>Register</b></div>
+        <div class="Register_Input_Divs">
+            <div class="Input_Divs">
+                <input type="text" id="employee_name" class="Input_Field" pattern="^[A-Z][a-zA-Z]{29,}" placeholder="Employee Name">
+            </div>
+            <div class="Input_Divs">
+                <input type="text" id="email_id" class="Input_Field" pattern="^[A-Za-z0-9]+([.\-_][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]{2,4}([\.][a-zA-Z]{2}){0,1}$" placeholder="Email ID">
+            </div>
+            <div class="Input_Divs">
+                <input type="tel" id="mobile_number" class="Input_Field" pattern="^[6-9]{1}[0-9]{9}$" placeholder="Mobile Number">
+            </div>
+            <div class="Input_Divs">
+                <textarea id="address" class="Input_Field" placeholder="Address"></textarea>
+            </div>
+            <div class="Input_Divs">
+                <input type="password" id="password" class="Input_Field" pattern="^(?=.{8,}$)(?=.*?[0-9])(?=.*[A-Z])[a-zA-Z0-9]*[#!@$^&-][a-zA-Z0-9]*$" placeholder="Emter password">
+            </div>
+        </div>
+        <div class="SignIn_Div">
+            <button id="Button_Signin" class="Disable_SignIn_Button" onclick="AddEmployee()">Register</button>
+        </div>
+    </div>
+
+</body>
+</html>

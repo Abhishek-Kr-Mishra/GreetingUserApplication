@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/Css/Login.css" />
+</head>
+<body class="Login_Body_Div">
+    <div class="Login_Main_Div" onkeyup="Validation()">
+        <div class="Login_Div">Login</div>
+        <div class="Login_Inputs_Div">
+            <div class="Input_Divs">
+                <input id="email" class="Input_Field" placeholder="Email" />
+            </div>
+            <div class="Input_Divs">
+                <input id="password" class="Input_Field" placeholder="Password" type="password"/>
+            </div>
+        </div>
+        <div class="SignIn_Div">
+            <button id="Button_Signin" class="Disable_SignIn_Button" onclick="SignIn()">SignIN</button>
+        </div>
+        <div class="SignUp_Div">
+            Not a Member?
+            <a href="Register.html" role="button" class="signUp_Button" >SignUp</a>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.0.js"></script>
+<script type="text/javascript"> 
+    function Validation() {
+        var email_data = document.getElementById("email").value;
+        var password_data = document.getElementById("password").value;
+        var EmailRegex = /^[A-Za-z0-9]+([.\-_][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]{2,4}([\.][a-zA-Z]{2}){0,1}/
+        if (email_data != "" && password_data != "" && email_data.match(EmailRegex)){
+            document.getElementById("Button_Signin").className = "SignIn_Button";
+        }
+    }
+    function SignIn() {
+        alert("Login Sucssesfull");
+    }
+</script>

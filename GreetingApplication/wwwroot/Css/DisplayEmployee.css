@@ -1,0 +1,29 @@
+﻿/*body.Display_Body_Div {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.Add_Employee_Div {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.Add_Employee_Button {
+    background: dodgerblue;
+    color: white;
+    height: 60%;
+    width: 15%;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+table {
+    border: solid thin;
+    border-collapse: collapse;
+}
+TH{
+    
+}

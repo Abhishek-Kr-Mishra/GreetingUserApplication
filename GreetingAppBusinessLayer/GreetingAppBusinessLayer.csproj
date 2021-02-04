@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GreetingAppModelLayer\GreetingAppModelLayer.csproj" />
+    <ProjectReference Include="..\GreetingAppRepositoryLayer\GreetingAppRepositoryLayer.csproj" />
+  </ItemGroup>
+
+</Project>
